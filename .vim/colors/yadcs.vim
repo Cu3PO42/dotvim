@@ -17,7 +17,7 @@ if has("gui_running")
     set background=dark
 endif
 
-hi Normal                guifg=#FFFFFF ctermfg=231  guibg=#171812 ctermbg=233  gui=NONE cterm=NONE
+hi Normal                guifg=#FFFFFF ctermfg=231  guibg=#171812 ctermbg=NONE gui=NONE cterm=NONE
 hi NonText               guifg=#A95F17 ctermfg=130  gui=NONE cterm=NONE
 hi Cursor                guifg=#000000 ctermfg=16   guibg=#FFFFFF ctermbg=231  gui=NONE cterm=NONE
 hi CursorLine            guifg=NONE    ctermfg=NONE guibg=#303030 ctermbg=236  gui=NONE cterm=NONE
@@ -28,6 +28,7 @@ hi Tooltip               guifg=#000000 ctermfg=16   guibg=#FFFFFF ctermbg=231  g
 hi Folded                guifg=#FD9D42 ctermfg=215  guibg=#303030 ctermbg=236  gui=NONE cterm=NONE
 hi FoldColumn            guifg=#A95F17 ctermfg=130  guibg=#303030 ctermbg=236  gui=NONE cterm=NONE
 hi SignColumn            guifg=#CF6A4C ctermfg=167  guibg=#303030 ctermbg=236  gui=NONE cterm=NONE
+hi conceal               guifg=#FECD6B ctermfg=221  guibg=#171812 ctermbg=233  gui=NONE cterm=NONE
 hi Comment               guifg=#AAAAAA ctermfg=248  gui=NONE cterm=NONE
 hi Function              guifg=#56B5C6 ctermfg=74   gui=NONE cterm=NONE
 hi Statement             guifg=#FD9D42 ctermfg=215  gui=NONE cterm=NONE
@@ -41,11 +42,12 @@ hi Operator              guifg=#FD9D42 ctermfg=215  gui=NONE cterm=NONE
 hi Delimiter             guifg=#A6EB80 ctermfg=150  gui=NONE cterm=NONE
 hi MatchParen            guifg=NONE    ctermfg=NONE guibg=NONE    ctermbg=NONE gui=UNDERLINE cterm=UNDERLINE guisp=#F36684
 hi Special               guifg=#F36684 ctermfg=204  gui=NONE cterm=NONE
-hi Error                 gui=UNDERCURL cterm=UNDERCURL guisp=#D70000
+hi Error                 guifg=NONE    ctermfg=NONE guibg=NONE    ctermbg=NONE gui=UNDERCURL cterm=UNDERCURL guisp=#D70000
 hi ErrorMsg              guifg=#D70000 ctermfg=160  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
 hi ModeMsg               guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi Question              guifg=#A6EB80 ctermfg=150  gui=NONE cterm=NONE
 hi Todo                  guifg=#A6EB80 ctermfg=150  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
+hi Title                 guifg=#F36684 ctermfg=204  gui=NONE cterm=NONE
 hi Visual                guifg=NONE    ctermfg=NONE guibg=#585858 ctermbg=240  gui=NONE cterm=NONE
 hi Search                guifg=NONE    ctermfg=NONE guibg=NONE    ctermbg=NONE gui=UNDERLINE cterm=UNDERLINE
 hi Pmenu                 guifg=#FFFFFF ctermfg=231  guibg=#303030 ctermbg=236  gui=NONE cterm=NONE

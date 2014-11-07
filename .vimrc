@@ -30,7 +30,16 @@
 
 " General {
     " Compatibility {
-        set t_Co=256
+            " Terminal {
+            set t_Co=256
+            set mouse=a
+            set ttimeout
+            set ttimeoutlen=20
+            set notimeout
+            if &term =~ '^screen'
+                set ttymouse=xterm2
+            endif
+        " }
 
         " macvim {
             if has('gui_macvim')
@@ -60,6 +69,7 @@
     set nowrap
     set hlsearch
     set incsearch
+    set backspace=indent,eol,start
 
 " }
 

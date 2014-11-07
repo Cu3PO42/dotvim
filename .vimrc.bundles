@@ -55,6 +55,18 @@
     " colorschemes {
         NeoBundle 'flazz/vim-colorschemes'
     " }
+
+    " CSApprox {
+        NeoBundle 'https://github.com/godlygeek/csapprox'
+    " }
+
+    " Vdebug {
+        NeoBundle 'joonty/vdebug'
+    " }
+
+    " neocomplete {
+        NeoBundle 'Shougo/neocomplete.vim'
+    " }
 " }
 
 " Git {
@@ -67,6 +79,7 @@
     " jedi-vim {
         NeoBundleLazy 'davidhalter/jedi-vim'
         autocmd FileType python NeoBundleSource jedi-vim
+        let g:jedi#documentation_command=''
     " }
 
     " python-mode {
@@ -75,13 +88,14 @@
         let g:pymode_rope=1
         let g:pymode_rope_completion=0
         let g:pymode_lint=0
-        let g:pymode_run_bind='<leader>R'
+        let g:pymode_run_bind='<leader>r'
     " }
 " }
 
 " CoffeeScript {
     " Syntax highlighting {
         NeoBundle 'kchmck/vim-coffee-script'
+        autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent
     " }
 " }
 
@@ -94,4 +108,24 @@
         let g:rubycomplete_classes_in_global=1
         let g:rubycomplete_rails=1
     " }
+" }
+
+" Haskell {
+    " vim2hs {
+        NeoBundle 'dag/vim2hs'
+        autocmd FileType haskell NeoBundleSource 'dag/vim2hs'
+        let g:haskell_conceal = 0
+    " }
+
+    " ghcmod-vim {
+        NeoBundle 'eagletmt/ghcmod-vim'
+        autocmd FileType haskell NeoBundleSource 'eagletmt/ghcmod-vim'
+    " }
+
+    " neco-ghc {
+        NeoBundle 'eagletmt/neco-ghc'
+        autocmd FileType haskell NeoBundleSource 'eagletmt/neco-ghc'
+    " }
+
+    autocmd FileType haskell set makeprg=ghc\ --make\ %
 " }
